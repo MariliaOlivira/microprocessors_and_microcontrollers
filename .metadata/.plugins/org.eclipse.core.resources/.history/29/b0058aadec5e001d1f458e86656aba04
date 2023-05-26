@@ -1,0 +1,397 @@
+/**
+ ******************************************************************************
+ * @file    main.c
+ * @author  Ac6
+ * @version V1.0
+ * @date    01-December-2013
+ * @brief   Default main function.
+ ******************************************************************************
+ */
+
+
+#include "stm32f4xx.h"
+#include <math.h>
+#include "Utility.h"
+#include <time.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define K1     !(GPIOE->IDR & (1<<3))
+#define K0     !(GPIOE->IDR & (1<<4))
+
+#define B1 	   !(GPIOA->IDR & (1<<11))
+#define B2     !(GPIOA->IDR & (1<<12))
+#define B3     !(GPIOA->IDR & (1<<13))
+
+//#define LED_ON(i) (GPIOA->ODR |= (1<<i))
+//#define LED_OFF(i) (GPIOA->ODR &= ~(1<<i))
+
+// LEDS EXTERNOS
+//#define LED_ON(i) (GPIOA->ODR |= (1<<i))
+//#define LED_OFF(i) (GPIOA->ODR &= ~(1<<i))
+
+// LEDS DA PLACA
+ #define LED_ON(i)  (GPIOE->ODR &= ~(1<<i))
+ #define LED_OFF(i) (GPIOE->ODR |= (1<<i))
+
+#define LED0_ON   (GPIOA->ODR |= (1<<0))
+#define LED0_OFF  (GPIOA->ODR &= ~(1<<0))
+#define LED1_ON   (GPIOA->ODR |= (1<<1))
+#define LED1_OFF  (GPIOA->ODR &= ~(1<<1))
+#define LED2_ON   (GPIOA->ODR |= (1<<2))
+#define LED2_OFF  (GPIOA->ODR &= ~(1<<2))
+#define LED3_ON   (GPIOA->ODR |= (1<<3))
+#define LED3_OFF  (GPIOA->ODR &= ~(1<<3))
+#define LED4_ON   (GPIOA->ODR |= (1<<4))
+#define LED4_OFF  (GPIOA->ODR &= ~(1<<4))
+#define LED5_ON   (GPIOA->ODR |= (1<<5))
+#define LED5_OFF  (GPIOA->ODR &= ~(1<<5))
+#define LED6_ON   (GPIOA->ODR |= (1<<6))
+#define LED6_OFF  (GPIOA->ODR &= ~(1<<6))
+#define LED7_ON   (GPIOA->ODR |= (1<<7))
+#define LED7_OFF  (GPIOA->ODR &= ~(1<<7))
+
+#define BUZZER_ON (GPIOE->ODR |= (1 << 8))
+#define BUZZER_OFF (GPIOE->ODR &= ~(1 << 8))
+
+void questao5() {
+	for (int i = 0; i < 4; i++) {
+		BUZZER_ON;
+		Delay_ms(50);
+		BUZZER_OFF;
+		Delay_ms(50);
+	}
+	Delay_ms(400);
+}
+
+void questao6() {
+	LED1_ON;
+	Delay_ms(1);
+	LED1_OFF;
+	Delay_ms(9);
+}
+
+void questao7() {
+	for (int i = 0; i < 10000; i += 100) {
+		LED6_ON;
+		Delay_us(i);
+		LED6_OFF;
+		Delay_us(10000 - i);
+	}
+	for (int i = 0; i < 10000; i += 100) {
+		LED6_ON;
+		Delay_us(10000 - i);
+		LED6_OFF;
+		Delay_us(i);
+	}
+}
+
+void questao8() {
+	// TT = 0,5s
+	// p = 0,25s
+	LED1_ON;
+	Delay_ms(250);
+	LED1_OFF;
+	LED2_ON;
+	Delay_ms(250);
+	LED2_OFF;
+}
+
+void questao9() {
+	/*
+	 * 00
+	 * 01
+	 * 10
+	 * 11
+	 * */
+
+
+	LED2_OFF;
+	LED1_OFF;
+	Delay_ms(1000);
+	LED2_OFF;
+	LED1_ON;
+	Delay_ms(1000);
+	LED2_ON;
+	LED1_OFF;
+	Delay_ms(1000);
+	LED2_ON;
+	LED1_ON;
+	Delay_ms(1000);
+}
+void questao10() {
+	for (int i = 0; i < 10000; i += 100) {
+		LED1_ON;
+		Delay_us(i);
+		LED1_OFF;
+		Delay_us(10000 - i);
+		LED2_ON;
+		Delay_us(10000 - i);
+		LED2_OFF;
+		Delay_us(i);
+
+	}
+	for (int i = 0; i < 10000; i += 100) {
+		LED1_ON;
+		Delay_us(10000 - i);
+		LED1_OFF;
+		Delay_us(i);
+		LED2_ON;
+		Delay_us(i);
+		LED2_OFF;
+		Delay_us(10000 - i);
+	}
+}
+
+void questao11() {
+	for (int i = 0; i < 256; ++i){
+		GPIOA->ODR = i;
+		Delay_ms(150);
+	}
+}
+
+void questao12(){
+	for (int i = 0; i < 8; ++i){
+		LED_ON(i);
+		Delay_ms(250);
+		LED_OFF(i);
+	}
+	for (int i = 7; i >= 0; --i){
+		LED_ON(i);
+		Delay_ms(250);
+		LED_OFF(i);
+	}
+}
+
+void questao13(){
+	for (int i = 0; i < 3; i++){
+		if (i == 0 || i == 1){
+			LED_ON(5);
+			LED_ON(i);
+			Delay_ms(1000);
+			LED_OFF(5);
+			LED_OFF(i);
+		}
+		if (i == 2) {
+			LED_ON(i);
+			LED_ON(3);
+			Delay_ms(1000);
+			LED_OFF(3);
+			LED_ON(4);
+			Delay_ms(1000);
+			LED_OFF(i);
+			LED_OFF(4);
+		}
+	}
+}
+
+void atraso(uint32_t atraso){
+	while(atraso) --atraso;
+}
+
+void questao14(){
+	/**
+	 * [0-9A-F]
+	 */
+	int list[16] = {63, // 32+16+8+4+2+1 = 63
+			48, // 32+16=48
+			109, // 1+32+64+4+8 = 109
+			121, // 1+32+64+16+8 = 121
+			114, // 2+64+32+16 = 114
+			91, // 1+2+64+16+8 = 91
+			95, // 1+2+64+4+16+8 = 95
+			49, // 1+32+16=49
+			127, // 1+2+4+8+16+32+64 = 127
+			115, // 1+2+64+32+16 = 115
+			119, // 1+2+4+64+32+16 = 119
+			94, // 127 // change
+			15, // 1+2+4+8 = 15
+			124, // 32+4+8+16+64 = 94 // change
+			79, // 1+2+4+8+64 = 79
+			71}; // 1+2+4+64 = 71
+
+	for (int i = 0; i < 16; ++i){
+		GPIOA->ODR = list[i];
+		atraso(250000);
+	}
+	for (int i = 15; i >= 0; --i){
+		GPIOA->ODR = list[i];
+		atraso(250000);
+	}
+}
+
+void questao15(){
+	/**
+	 * [0-9A-F]
+	 */
+	int list[16] = {63, // 32+16+8+4+2+1 = 63
+			48, // 32+16=48
+			109, // 1+32+64+4+8 = 109
+			121, // 1+32+64+16+8 = 121
+			114, // 2+64+32+16 = 114
+			91, // 1+2+64+16+8 = 91
+			95, // 1+2+64+4+16+8 = 95
+			49, // 1+32+16=49
+			127, // 1+2+4+8+16+32+64 = 127
+			115, // 1+2+64+32+16 = 115
+			119, // 1+2+4+64+32+16 = 119
+			127, // 127
+			15, // 1+2+4+8 = 15
+			63, // 1+2+4+8+16+32 = 63
+			79, // 1+2+4+8+64 = 79
+			71}; // 1+2+4+64 = 71
+
+	for (int i = 0; i < 16; ++i){
+		GPIOE->ODR = list[i];
+		atraso(250000);
+	}
+}
+
+void questao17() {
+	/**
+	 * 20ms
+	 *
+	 * 1.5ms up
+	 * 20 down
+	 */
+	for (int i = 600; i <= 2400; i+=10) {
+		GPIOE->ODR = 0;
+		atraso(600);
+		GPIOE->ODR = 1;
+		atraso(19400);
+	}
+	for (int i = 600; i <= 2400; i+=10) {
+		GPIOE->ODR = 0;
+		atraso(2400);
+		GPIOE->ODR = 1;
+		atraso(17600);
+	}
+}
+
+void questao21() {
+	if (K0) {
+		LED_ON(0);
+	} else LED_OFF(0);
+}
+
+void questao22() {
+	if (B1) {
+		LED_ON(0);
+	} else LED_OFF(0);
+
+	if (B2) {
+		LED_ON(1);
+	} else LED_OFF(1);
+}
+
+void questao23() {
+	static int state = 0;
+	if (B1) {
+		if (!state) LED_ON(0);
+		if (state)  LED_OFF(0);
+		state = (!state);
+	}
+}
+
+void questao24() {
+	if (K1) {
+		while (B1 && !B2)
+			LED_ON(6);
+	}
+}
+
+void questao25() {
+	int stop = 0;
+	if (B1) {
+		while ((B1 && !B2) && (stop < 10)) {
+			Delay_ms(100);
+			stop += 1;
+		}
+
+		if (stop == 9) LED_ON(1);
+		else
+			LED_OFF(1);
+	}
+}
+void todos(){
+	LED_ON(0);
+	LED_ON(1);
+	LED_ON(2);
+	atraso(250000);
+	LED_OFF(0);
+	LED_OFF(1);
+	LED_OFF(2);
+	atraso(250000);
+}
+
+void questao30() {
+	int list[3];
+	int count= 0;
+	for (int i = 0; i < 3; ++i){
+		int oi = rand()%3;
+		list[i] = oi;
+		LED_ON(oi);
+		atraso(250000);
+		LED_OFF(oi);
+		atraso(250000);
+	}
+	while(count < 3){
+		count++;
+		while (!B1 && !B2 && !B3){
+			if (B1){
+				LED_ON(0);
+
+	//			if (list[i] != 0){
+	//				todos();
+	//				return;
+	//			}
+			}if(B2){
+				LED_ON(1);
+	//			if (list[i] != 1){
+	//				todos();
+	//				return;
+	//			}
+			}if(B3){
+				LED_ON(2);
+	//			if (list[i] != 2){
+	//				todos();
+	//				return;
+	//			}
+			}
+	}
+	//	for (int i=0; i<3; i++){
+		//		if (!(list[i] == list2[i])){
+			//			todos();
+			//			questao30();
+			//		}
+		//	}
+}
+
+int main(void) {
+	Configure_Clock();
+	Delay_Start();
+
+	RCC->AHB1ENR |= 1;         //habilita o clock do GPIOA
+	RCC->AHB1ENR |= 1 << 4;    //habilita o clock do GPIOE
+
+	for (int i = 0; i < 8; ++i){
+		GPIOA->MODER |= (0b01 << (2*i));
+	}
+
+//	for (int i = 11; i < 14; ++i){
+//		GPIOA->MODER &= ~(0b11 << 2*i);
+//		GPIOE->PUPDR |= (0b01 << i);
+//	}
+
+	//	//Configurando o pino PE3 como entrada
+	//	GPIOE->MODER &= ~(0b11 << 6);
+	//	GPIOE->PUPDR |= (0b01 << 6); //habilita o resistor de pull up para garantir nível lógico alto quando o botão estiver solto
+	//	//Configurando o pino PE4 como entrada
+	//	GPIOE->MODER &= ~(0b11 << 8);
+	//	GPIOE->PUPDR |= (0b01 << 8); //habilita o resistor de pull up para garantir nível lógico alto quando o botão estiver solto
+
+	while (1) {
+		LED_ON(6);
+		LED_ON(7);
+	}
+}

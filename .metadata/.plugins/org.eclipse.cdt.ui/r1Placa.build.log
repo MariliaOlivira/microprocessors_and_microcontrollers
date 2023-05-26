@@ -1,0 +1,110 @@
+20:40:03 **** Build of configuration Debug for project r1Placa ****
+make -j8 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../src/main.c
+Invoking: MCU GCC Assembler
+Building file: ../src/syscalls.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Placa/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+Building file: ../src/system_stm32f4xx.c
+/home/marilia/MicroSTM32/r1Placa/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/marilia/MicroSTM32/r1Placa/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+Building file: ../StdPeriph_Driver/src/misc.c
+/home/marilia/MicroSTM32/r1Placa/Debug
+Building file: ../StdPeriph_Driver/src/stm32f4xx_adc.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f4xx.d" -MT"src/system_stm32f4xx.o" -o "src/system_stm32f4xx.o" "../src/system_stm32f4xx.c"
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Placa/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/misc.d" -MT"StdPeriph_Driver/src/misc.o" -o "StdPeriph_Driver/src/misc.o" "../StdPeriph_Driver/src/misc.c"
+/home/marilia/MicroSTM32/r1Placa/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_adc.d" -MT"StdPeriph_Driver/src/stm32f4xx_adc.o" -o "StdPeriph_Driver/src/stm32f4xx_adc.o" "../StdPeriph_Driver/src/stm32f4xx_adc.c"
+Building file: ../StdPeriph_Driver/src/stm32f4xx_can.c
+In file included from ../src/main.c:12:0:
+/home/marilia/MicroSTM32/r1Placa/CMSIS/device/stm32f4xx.h:108:0: warning: "STM32F40_41xxx" redefined
+   #define STM32F40_41xxx
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+In file included from ../src/system_stm32f4xx.c:317:0:
+/home/marilia/MicroSTM32/r1Placa/CMSIS/device/stm32f4xx.h:108:0: warning: "STM32F40_41xxx" redefined
+   #define STM32F40_41xxx
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+In file included from /home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc/stm32f4xx_adc.h:38:0,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/marilia/MicroSTM32/r1Placa/CMSIS/device/stm32f4xx.h:108:0: warning: "STM32F40_41xxx" redefined
+   #define STM32F40_41xxx
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+In file included from /home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc/misc.h:38:0,
+                 from ../StdPeriph_Driver/src/misc.c:76:
+/home/marilia/MicroSTM32/r1Placa/CMSIS/device/stm32f4xx.h:108:0: warning: "STM32F40_41xxx" redefined
+   #define STM32F40_41xxx
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+Invoking: MCU GCC Compiler
+Finished building: ../startup/startup_stm32.s
+/home/marilia/MicroSTM32/r1Placa/Debug
+ 
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_can.d" -MT"StdPeriph_Driver/src/stm32f4xx_can.o" -o "StdPeriph_Driver/src/stm32f4xx_can.o" "../StdPeriph_Driver/src/stm32f4xx_can.c"
+Building file: ../StdPeriph_Driver/src/stm32f4xx_cec.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Placa/Debug
+Building file: ../StdPeriph_Driver/src/stm32f4xx_crc.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cec.d" -MT"StdPeriph_Driver/src/stm32f4xx_cec.o" -o "StdPeriph_Driver/src/stm32f4xx_cec.o" "../StdPeriph_Driver/src/stm32f4xx_cec.c"
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Placa/Debug
+In file included from /home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc/stm32f4xx_can.h:38:0,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/marilia/MicroSTM32/r1Placa/CMSIS/device/stm32f4xx.h:108:0: warning: "STM32F40_41xxx" redefined
+   #define STM32F40_41xxx
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_crc.d" -MT"StdPeriph_Driver/src/stm32f4xx_crc.o" -o "StdPeriph_Driver/src/stm32f4xx_crc.o" "../StdPeriph_Driver/src/stm32f4xx_crc.c"
+Finished building: ../src/syscalls.c
+../src/system_stm32f4xx.c: In function 'SetSysClock':
+../src/system_stm32f4xx.c:760:5: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+     while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);
+     ^~~~~
+../src/system_stm32f4xx.c:761:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+     {
+     ^
+../src/main.c:14:10: fatal error: Utility.h: No such file or directory
+ #include "Utility.h"
+          ^~~~~~~~~~~
+compilation terminated.
+In file included from /home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc/stm32f4xx_cec.h:38:0,
+                 from ../StdPeriph_Driver/src/stm32f4xx_cec.c:93:
+/home/marilia/MicroSTM32/r1Placa/CMSIS/device/stm32f4xx.h:108:0: warning: "STM32F40_41xxx" redefined
+   #define STM32F40_41xxx
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+In file included from /home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc/stm32f4xx_crc.h:38:0,
+                 from ../StdPeriph_Driver/src/stm32f4xx_crc.c:29:
+/home/marilia/MicroSTM32/r1Placa/CMSIS/device/stm32f4xx.h:108:0: warning: "STM32F40_41xxx" redefined
+   #define STM32F40_41xxx
+ 
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+make: *** [src/subdir.mk:29: src/main.o] Erro 1
+make: ** Esperando que outros processos terminem.
+Finished building: ../StdPeriph_Driver/src/misc.c
+ 
+Finished building: ../src/system_stm32f4xx.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_adc.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_cec.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_crc.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_can.c
+ 
+
+20:40:04 Build Finished (took 360ms)
+

@@ -1,0 +1,24 @@
+09:23:28 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2040	   1080	   1092	   4212	   1074	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+
+09:23:29 Build Finished (took 310ms)
+

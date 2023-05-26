@@ -1,0 +1,1291 @@
+20:40:01 **** Clean-only build of configuration Debug for project r1Placa ****
+make -j8 clean 
+rm -rf *
+ 
+20:40:03 **** Build of configuration Debug for project r1Placa ****
+make -j8 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../src/main.c
+Invoking: MCU GCC Assembler
+Building file: ../src/syscalls.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Placa/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+Building file: ../src/system_stm32f4xx.c
+/home/marilia/MicroSTM32/r1Placa/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/marilia/MicroSTM32/r1Placa/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+Building file: ../StdPeriph_Driver/src/misc.c
+/home/marilia/MicroSTM32/r1Placa/Debug
+Building file: ../StdPeriph_Driver/src/stm32f4xx_adc.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f4xx.d" -MT"src/system_stm32f4xx.o" -o "src/system_stm32f4xx.o" "../src/system_stm32f4xx.c"
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Placa/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/misc.d" -MT"StdPeriph_Driver/src/misc.o" -o "StdPeriph_Driver/src/misc.o" "../StdPeriph_Driver/src/misc.c"
+/home/marilia/MicroSTM32/r1Placa/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_adc.d" -MT"StdPeriph_Driver/src/stm32f4xx_adc.o" -o "StdPeriph_Driver/src/stm32f4xx_adc.o" "../StdPeriph_Driver/src/stm32f4xx_adc.c"
+Building file: ../StdPeriph_Driver/src/stm32f4xx_can.c
+In file included from ../src/main.c:12:0:
+/home/marilia/MicroSTM32/r1Placa/CMSIS/device/stm32f4xx.h:108:0: warning: "STM32F40_41xxx" redefined
+   #define STM32F40_41xxx
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+In file included from ../src/system_stm32f4xx.c:317:0:
+/home/marilia/MicroSTM32/r1Placa/CMSIS/device/stm32f4xx.h:108:0: warning: "STM32F40_41xxx" redefined
+   #define STM32F40_41xxx
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+In file included from /home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc/stm32f4xx_adc.h:38:0,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/marilia/MicroSTM32/r1Placa/CMSIS/device/stm32f4xx.h:108:0: warning: "STM32F40_41xxx" redefined
+   #define STM32F40_41xxx
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+In file included from /home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc/misc.h:38:0,
+                 from ../StdPeriph_Driver/src/misc.c:76:
+/home/marilia/MicroSTM32/r1Placa/CMSIS/device/stm32f4xx.h:108:0: warning: "STM32F40_41xxx" redefined
+   #define STM32F40_41xxx
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+Invoking: MCU GCC Compiler
+Finished building: ../startup/startup_stm32.s
+/home/marilia/MicroSTM32/r1Placa/Debug
+ 
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_can.d" -MT"StdPeriph_Driver/src/stm32f4xx_can.o" -o "StdPeriph_Driver/src/stm32f4xx_can.o" "../StdPeriph_Driver/src/stm32f4xx_can.c"
+Building file: ../StdPeriph_Driver/src/stm32f4xx_cec.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Placa/Debug
+Building file: ../StdPeriph_Driver/src/stm32f4xx_crc.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cec.d" -MT"StdPeriph_Driver/src/stm32f4xx_cec.o" -o "StdPeriph_Driver/src/stm32f4xx_cec.o" "../StdPeriph_Driver/src/stm32f4xx_cec.c"
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Placa/Debug
+In file included from /home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc/stm32f4xx_can.h:38:0,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/marilia/MicroSTM32/r1Placa/CMSIS/device/stm32f4xx.h:108:0: warning: "STM32F40_41xxx" redefined
+   #define STM32F40_41xxx
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VETx -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Placa/inc" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Placa/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_crc.d" -MT"StdPeriph_Driver/src/stm32f4xx_crc.o" -o "StdPeriph_Driver/src/stm32f4xx_crc.o" "../StdPeriph_Driver/src/stm32f4xx_crc.c"
+Finished building: ../src/syscalls.c
+../src/system_stm32f4xx.c: In function 'SetSysClock':
+../src/system_stm32f4xx.c:760:5: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+     while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);
+     ^~~~~
+../src/system_stm32f4xx.c:761:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+     {
+     ^
+../src/main.c:14:10: fatal error: Utility.h: No such file or directory
+ #include "Utility.h"
+          ^~~~~~~~~~~
+compilation terminated.
+In file included from /home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc/stm32f4xx_cec.h:38:0,
+                 from ../StdPeriph_Driver/src/stm32f4xx_cec.c:93:
+/home/marilia/MicroSTM32/r1Placa/CMSIS/device/stm32f4xx.h:108:0: warning: "STM32F40_41xxx" redefined
+   #define STM32F40_41xxx
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+In file included from /home/marilia/MicroSTM32/r1Placa/StdPeriph_Driver/inc/stm32f4xx_crc.h:38:0,
+                 from ../StdPeriph_Driver/src/stm32f4xx_crc.c:29:
+/home/marilia/MicroSTM32/r1Placa/CMSIS/device/stm32f4xx.h:108:0: warning: "STM32F40_41xxx" redefined
+   #define STM32F40_41xxx
+ 
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+make: *** [src/subdir.mk:29: src/main.o] Erro 1
+make: ** Esperando que outros processos terminem.
+Finished building: ../StdPeriph_Driver/src/misc.c
+ 
+Finished building: ../src/system_stm32f4xx.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_adc.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_cec.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_crc.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_can.c
+ 
+20:40:04 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+make: Nada a ser feito para 'all'.
+20:40:12 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+make: Nada a ser feito para 'all'.
+20:41:22 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2272	   1088	   1092	   4452	   1164	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+20:43:08 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2268	   1088	   1092	   4448	   1160	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+20:45:40 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2308	   1088	   1092	   4488	   1188	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+20:46:39 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'questao30':
+../src/main.c:329:6: warning: unused variable 'count' [-Wunused-variable]
+  int count= 0;
+      ^~~~~
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2308	   1088	   1092	   4488	   1188	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+20:48:22 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'questao30':
+../src/main.c:329:6: warning: unused variable 'count' [-Wunused-variable]
+  int count= 0;
+      ^~~~~
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2344	   1088	   1092	   4524	   11ac	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+20:49:36 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'questao30':
+../src/main.c:329:6: warning: unused variable 'count' [-Wunused-variable]
+  int count= 0;
+      ^~~~~
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2344	   1088	   1092	   4524	   11ac	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+20:50:04 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'questao30':
+../src/main.c:329:6: warning: unused variable 'count' [-Wunused-variable]
+  int count= 0;
+      ^~~~~
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2348	   1088	   1092	   4528	   11b0	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+20:52:34 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'questao30':
+../src/main.c:371:6: warning: 'main' is normally a non-static function [-Wmain]
+  int main(void) {
+      ^~~~
+../src/main.c:398:2: error: expected declaration or statement at end of input
+  }
+  ^
+At top level:
+../src/main.c:371:6: warning: 'main' defined but not used [-Wunused-function]
+  int main(void) {
+      ^~~~
+make: *** [src/subdir.mk:27: src/main.o] Erro 1
+20:57:20 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2340	   1088	   1092	   4520	   11a8	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+20:59:42 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'soteia':
+../src/main.c:339:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  return list;
+         ^~~~
+../src/main.c: In function 'questao30':
+../src/main.c:345:10: warning: implicit declaration of function 'sorteia'; did you mean 'soteia'? [-Wimplicit-function-declaration]
+   list = sorteia();
+          ^~~~~~~
+          soteia
+../src/main.c:345:8: error: assignment to expression with array type
+   list = sorteia();
+        ^
+make: *** [src/subdir.mk:27: src/main.o] Erro 1
+21:00:51 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'soteia':
+../src/main.c:339:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  return list;
+         ^~~~
+../src/main.c: In function 'questao30':
+../src/main.c:345:10: warning: implicit declaration of function 'sorteia'; did you mean 'soteia'? [-Wimplicit-function-declaration]
+   list = sorteia();
+          ^~~~~~~
+          soteia
+../src/main.c:345:8: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   list = sorteia();
+        ^
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+src/main.o: In function `questao30':
+/home/marilia/MicroSTM32/r1Proteus/Debug/../src/main.c:345: undefined reference to `sorteia'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:37: r1Proteus.elf] Erro 1
+21:01:21 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'sorteia':
+../src/main.c:339:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  return list;
+         ^~~~
+../src/main.c: In function 'questao30':
+../src/main.c:345:8: error: assignment to expression with array type
+   list = sorteia();
+        ^
+make: *** [src/subdir.mk:27: src/main.o] Erro 1
+21:01:25 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'sorteia':
+../src/main.c:339:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  return list;
+         ^~~~
+../src/main.c: In function 'questao30':
+../src/main.c:345:8: error: assignment to expression with array type
+   list = sorteia();
+        ^
+make: *** [src/subdir.mk:27: src/main.o] Erro 1
+21:02:43 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'sorteia':
+../src/main.c:339:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  return list;
+         ^~~~
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2360	   1088	   1092	   4540	   11bc	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+21:03:25 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'sorteia':
+../src/main.c:339:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  return list;
+         ^~~~
+../src/main.c: In function 'questao30':
+../src/main.c:345:8: error: assignment to expression with array type
+   list = sorteia();
+        ^
+make: *** [src/subdir.mk:27: src/main.o] Erro 1
+21:03:34 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'sorteia':
+../src/main.c:339:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  return list;
+         ^~~~
+../src/main.c: In function 'questao30':
+../src/main.c:342:16: error: invalid initializer
+  int list[3] = sorteia();
+                ^~~~~~~
+make: *** [src/subdir.mk:27: src/main.o] Erro 1
+21:04:33 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2320	   1088	   1092	   4500	   1194	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+21:04:37 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2320	   1088	   1092	   4500	   1194	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+21:05:29 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+make: Nada a ser feito para 'all'.
+21:05:30 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2340	   1088	   1092	   4520	   11a8	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+21:05:52 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+make: Nada a ser feito para 'all'.
+21:10:00 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2320	   1088	   1092	   4500	   1194	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+21:11:47 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+/home/marilia/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text._gettimeofday_r+0x10): undefined reference to `_gettimeofday'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:37: r1Proteus.elf] Erro 1
+21:18:14 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+/home/marilia/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text._gettimeofday_r+0x10): undefined reference to `_gettimeofday'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:37: r1Proteus.elf] Erro 1
+21:18:19 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+/home/marilia/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text._gettimeofday_r+0x10): undefined reference to `_gettimeofday'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:37: r1Proteus.elf] Erro 1
+21:18:46 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+/home/marilia/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text._gettimeofday_r+0x10): undefined reference to `_gettimeofday'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:37: r1Proteus.elf] Erro 1
+21:23:41 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+/home/marilia/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text._gettimeofday_r+0x10): undefined reference to `_gettimeofday'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:37: r1Proteus.elf] Erro 1
+21:26:23 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+/home/marilia/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text._gettimeofday_r+0x10): undefined reference to `_gettimeofday'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:37: r1Proteus.elf] Erro 1
+21:27:47 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+/home/marilia/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text._gettimeofday_r+0x10): undefined reference to `_gettimeofday'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:37: r1Proteus.elf] Erro 1
+21:27:48 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+/home/marilia/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text._gettimeofday_r+0x10): undefined reference to `_gettimeofday'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:37: r1Proteus.elf] Erro 1
+21:29:46 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'questao30':
+../src/main.c:329:6: warning: unused variable 'count' [-Wunused-variable]
+  int count= 0;
+      ^~~~~
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2352	   1088	   1092	   4532	   11b4	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+21:31:04 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'questao30':
+../src/main.c:329:6: warning: unused variable 'count' [-Wunused-variable]
+  int count= 0;
+      ^~~~~
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2356	   1088	   1092	   4536	   11b8	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+21:31:56 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'questao30':
+../src/main.c:329:6: warning: unused variable 'count' [-Wunused-variable]
+  int count= 0;
+      ^~~~~
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2356	   1088	   1092	   4536	   11b8	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+21:31:58 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+make: Nada a ser feito para 'all'.
+21:33:24 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2352	   1088	   1092	   4532	   11b4	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+21:34:47 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2340	   1088	   1092	   4520	   11a8	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+21:35:43 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+make: Nada a ser feito para 'all'.
+21:36:53 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2332	   1088	   1092	   4512	   11a0	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+21:37:39 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2340	   1088	   1092	   4520	   11a8	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+21:38:43 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2344	   1088	   1092	   4524	   11ac	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+21:39:06 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2348	   1088	   1092	   4528	   11b0	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+07:58:32 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2376	   1088	   1092	   4556	   11cc	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+07:59:20 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2376	   1088	   1092	   4556	   11cc	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+07:59:25 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+make: Nada a ser feito para 'all'.
+07:59:59 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2376	   1088	   1092	   4556	   11cc	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+08:00:43 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2376	   1088	   1092	   4556	   11cc	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+08:01:02 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+make: Nada a ser feito para 'all'.
+08:01:03 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2376	   1088	   1092	   4556	   11cc	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+08:06:26 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2380	   1088	   1092	   4560	   11d0	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+08:07:10 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+make: Nada a ser feito para 'all'.
+08:07:55 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2380	   1088	   1092	   4560	   11d0	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+08:08:05 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+make: Nada a ser feito para 'all'.
+08:14:56 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2380	   1088	   1092	   4560	   11d0	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+08:16:30 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2396	   1088	   1092	   4576	   11e0	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+08:31:26 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2400	   1088	   1092	   4580	   11e4	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+08:32:06 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2452	   1088	   1092	   4632	   1218	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+08:32:19 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+make: Nada a ser feito para 'all'.
+08:32:20 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2456	   1088	   1092	   4636	   121c	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+08:32:23 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+make: Nada a ser feito para 'all'.
+08:32:38 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2456	   1088	   1092	   4636	   121c	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+08:32:53 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+make: Nada a ser feito para 'all'.
+09:07:08 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2456	   1088	   1092	   4636	   121c	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+09:07:13 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1984	   1080	   1092	   4156	   103c	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+09:08:46 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+make: Nada a ser feito para 'all'.
+09:08:47 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:397:3: error: 'GPIO' undeclared (first use in this function); did you mean 'GPIOC'?
+   GPIO->MODER |= (0b01 << (2*i));
+   ^~~~
+   GPIOC
+../src/main.c:397:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:27: src/main.o] Erro 1
+09:08:55 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2024	   1080	   1092	   4196	   1064	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+09:10:41 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2028	   1080	   1092	   4200	   1068	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+09:19:09 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2028	   1080	   1092	   4200	   1068	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
+09:23:28 **** Incremental Build of configuration Debug for project r1Proteus ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/marilia/MicroSTM32/r1Proteus/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F401VETx -DDEBUG -DSTM32F401xx -DUSE_STDPERIPH_DRIVER -I"/home/marilia/MicroSTM32/r1Proteus/StdPeriph_Driver/inc" -I"/home/marilia/MicroSTM32/r1Proteus/inc" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/device" -I"/home/marilia/MicroSTM32/r1Proteus/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: r1Proteus.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/home/marilia/MicroSTM32/r1Proteus/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "r1Proteus.elf" @"objects.list"   -lm
+Finished building target: r1Proteus.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "r1Proteus.elf" "r1Proteus.bin"
+arm-none-eabi-size "r1Proteus.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2040	   1080	   1092	   4212	   1074	r1Proteus.elf
+arm-none-eabi-objcopy -O ihex "r1Proteus.elf" "r1Proteus.hex"
+ 
