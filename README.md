@@ -7,5 +7,5 @@ Este repositório foi criado como um recurso complementar à disciplina de Micro
 1. Clone este repositório para o seu ambiente de desenvolvimento local usando o seguinte comando:
 
    ```
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/MariliaOlivira/microprocessors_and_microcontrollers.git
    ```
